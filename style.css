@@ -4,6 +4,6 @@ body {
     color: rgb(240, 113, 70);
     margin: 0;
 }
-container {
+.container {
     max-width: 960 px;
 }
