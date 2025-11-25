@@ -1,12 +1,13 @@
 console.log("le script est chargé !")
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
- <script src="script.js"></script>   
-</body>
-</html>
+// 1. CIBLER
+const titre = document.querySelector('#titre-principal');
+
+// On vérifie s'il existe (pour ne pas créer d'erreur sur les autres pages)
+if (titre) {
+  // 2. ÉCOUTER
+  titre.addEventListener('click', () => {
+    // 3. MANIPULER
+    console.log("J'ai cliqué sur le titre !");
+    titre.textContent = "Titre cliqué !";
+  });
+}
